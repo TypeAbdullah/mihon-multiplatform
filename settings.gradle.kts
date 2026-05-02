@@ -38,3 +38,13 @@ include(":presentation-widget")
 include(":source-api")
 include(":source-local")
 include(":telemetry")
+
+// KMP Modules
+include(":shared")
+project(":shared").projectDir = file("kmp/shared")
+
+include(":androidApp")
+project(":androidApp").projectDir = file("kmp/androidApp")
+
+include(":desktopApp")
+project(":desktopApp").projectDir = file("kmp/desktopApp")
